@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Sessão Acústica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sessão Acústica</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="index.html#galeria">Galeria</a></li>
+                <li><a href="ingressos.html">Ingressos</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato">
+            <h2>Entre em Contato Conosco</h2>
+            <form id="contato-form">
+                <label for="contato-nome">Nome:</label>
+                <input type="text" id="contato-nome" required>
+
+                <label for="contato-email">E-mail:</label>
+                <input type="email" id="contato-email" required>
+
+                <label for="contato-mensagem">Mensagem:</label>
+                <textarea id="contato-mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <div id="contato-resposta" class="contato-resposta"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sessão Acústica. Todos os direitos reservados.</p>
+        <div class="redes-sociais">
+            <a href="#">Facebook</a>
+            <a href="https://instagram.com/ssacustica">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="scripti.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessão Acústica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sessão Acústica</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="ingressos.html">Ingressos</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="banner">
+            <h2>Bem-vindo à Sessão Acústica - Todo Sábado!</h2>
+            <button onclick="window.location.href='#ingressos'">Compre Ingressos</button>
+            <div class="proxima-sessao">
+                <h3>Próxima Sessão:</h3>
+                <p>Data: 10 de Outubro | Hora: 20:00 | Local: Casa de Shows XYZ</p>
+                <p>Artista: João Silva - Músico e Compositor</p>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre o Evento</h2>
+            <p>A Sessão Acústica é um evento que reúne músicos e musicistas todo sábado para uma noite de música ao vivo. Venha e desfrute de performances incríveis em um ambiente acolhedor.</p>
+        </section>
+
+        <section id="artistas">
+            <h2>Artistas</h2>
+            <div class="artistas-grid">
+                <div class="artista">
+                    <h3>EM BREVE</h3>
+                    <p>EM BREVE!!!</p>
+                </div>
+                <div class="artista">
+                    <h3>EM BREVE</h3>
+                    <p>EM BREVE!!!</p>
+                </div>
+                <!-- Adicione mais artistas conforme necessário -->
+            </div>
+        </section>
+        <section id="ingressos">
+            <h2>Ingressos</h2>
+            <form id="ingresso-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+                <label for="tipo">Tipo de Ingresso:</label>
+                <select id="tipo">
+                    <option value="inteira">Inteira</option>
+                    <option value="meia">Meia-Entrada</option>
+                </select>
+                <button type="submit">Comprar Ingresso</button>
+            </form>
+            <div id="mensagem"></div>
+        </section>
+
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <form id="feedback-form">
+                <label for="feedback-nome">Nome:</label>
+                <input type="text" id="feedback-nome" required>
+                <label for="feedback-mensagem">Mensagem:</label>
+                <textarea id="feedback-mensagem" required></textarea>
+                <button type="submit">Enviar Feedback</button>
+            </form>
+            <div id="feedback-mensagem"></div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="contato-nome">Nome:</label>
+                <input type="text" id="contato-nome" required>
+                <label for="contato-email">E-mail:</label>
+                <input type="email" id="contato-email" required>
+                <label for="mensagem-contato">Mensagem:</label>
+                <textarea id="mensagem-contato" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sessão Acústica. Todos os direitos reservados.</p>
+        <div class="redes-sociais">
+            <a href="#">Facebook</a>
+            <a href="https://instagram.com/ssacustica">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <p id="modal-mensagem"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

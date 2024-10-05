@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Sessão Acústica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sessão Acústica</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="ingressos.html">Ingressos</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="feedback">
+            <h2>Deixe seu Feedback</h2>
+            <form id="feedback-form">
+                <label for="feedback-nome">Nome:</label>
+                <input type="text" id="feedback-nome" required>
+
+                <label for="feedback-mensagem">Mensagem:</label>
+                <textarea id="feedback-mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar Feedback</button>
+            </form>
+            <div id="feedback-resposta" class="feedback-resposta"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sessão Acústica. Todos os direitos reservados.</p>
+        <div class="redes-sociais">
+            <a href="#">Facebook</a>
+            <a href="https://instagram.com/ssacustica">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="scripter.js"></script>
+</body>
+</html>
